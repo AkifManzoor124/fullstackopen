@@ -1,0 +1,9 @@
+title New Note Diagram
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+server-->browser: JSON Response {"message":"note created"}
+
+note over browser
+Browser starts rendering the note created by the user.
+end note
+

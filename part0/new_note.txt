@@ -1,0 +1,30 @@
+title New Note Sequence Diagram
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+
+server-->browser: URL Redirect: Status Code 302: Location: /exampleapp/notes
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser: HTML-Code
+
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser: main.js
+
+note over browser: 
+Browser starts executing main.js, 
+that requests data.json.
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: data.json
+
+note over browser:
+Browser starts executing the event handler,
+to re-draw the notes with the new note
+added.
+end note
+
