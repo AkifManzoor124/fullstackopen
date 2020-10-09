@@ -1,0 +1,11 @@
+POST http://localhost:3003/api/blogs/  HTTP/1.1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRhbmlzaDEyNCIsImlkIjoiNWY2YjVkYzBhNGZjNDk1MDQ0ZDQ0Y2Y5IiwiaWF0IjoxNjAwODkxODYwfQ.cynOOaml4ykbsouw-FTyLhrzGVhhRV_rQ6cH71gkdZU
+
+{
+    "title": "Nigga nigga nigga",
+    "author": "Danish Manzoor",
+    "url": "http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html",
+    "userId": "5f6b538f942d540680aca678",
+    "__v": 0
+}
