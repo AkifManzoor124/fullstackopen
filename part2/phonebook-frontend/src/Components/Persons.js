@@ -17,8 +17,6 @@ const Persons = (props) => {
       })
   }
 
-  console.log("Filter Lenght", props.filter.length)
-  console.log("Persons:", props.persons)
   const showList = (props.filter.length === 0) ? props.persons : props.persons.filter((person) => person.name.includes(props.filter))
   console.log(showList)
   return (
